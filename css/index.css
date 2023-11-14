@@ -776,7 +776,7 @@ dl+dl:before {
     width:30px;
     position:absolute;
     top:0;
-    right:35px;
+    right:70px;
     cursor: pointer;
 }
 
@@ -784,7 +784,7 @@ dl+dl:before {
     width:30px;
     position:absolute;
     top:0;
-    right:0;
+    right:35px;
     cursor: pointer;
 }
 
