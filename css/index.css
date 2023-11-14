@@ -87,13 +87,14 @@
     color:#555;
     border:1px solid #ddd;
     border-radius:5px;
-    width:150px;
-    padding:5px 0;
+    width: 130px;
+    padding: 5px 10px;
     position: relative;
   }
 
   .family>a {
-    display: block;
+    display: flex;
+    justify-content: space-between;
   }
 
   .family .icon {
@@ -128,6 +129,7 @@
   .family ul {
     position: absolute;
     top: 32px;
+    right:0;
     width: 150px;
     border:1px solid #ddd;
     border-radius:5px;
@@ -254,56 +256,7 @@ dl+dl:before {
     font-size:15px;
     color:#555;
 }
-
-/* ---------슬라이드---------- */
-.station{
-    /* border:1px solid red; */
-    padding-top:35px;
-    margin-top:5px;
-    width:100%;
-    overflow:hidden;
-    display:flex;
-    flex-direction: column-reverse;
-    position:relative;
 }
-
-.train{
-    width:calc(190% - 50px);
-    display:flex;
-}
-
-.train>li{
-    width:200px;
-    margin-right:10px;
-    /* border:1px solid green; */
-}
-
-.train>li>img{
-    width:100%;
-    object-fit: cover;
-}
-
-.btnPrev{
-    width:30px;
-    position:absolute;
-    top:0;
-    right:35px;
-    cursor: pointer;
-}
-
-.btnNext{
-    width:30px;
-    position:absolute;
-    top:0;
-    right:0;
-    cursor: pointer;
-}
-
-.btnPrev>img,.btnNext>img{
-    width:100%;
-    object-fit: cover;
-}
-  }
 
   /* 태블릿 *//* 태블릿 *//* 태블릿 *//* 태블릿 *//* 태블릿 *//* 태블릿 *//* 태블릿 *//* 태블릿 */
   @media (min-width:768px) and (max-width:1023px) {
@@ -349,13 +302,14 @@ dl+dl:before {
     color:#555;
     border:1px solid #ddd;
     border-radius:5px;
-    width:150px;
-    padding:5px 0;
+    width: 130px;
+    padding: 5px 10px;
     position: relative;
   }
 
   .family>a {
-    display: block;
+    display: flex;
+    justify-content: space-between;
   }
 
   .family .icon {
@@ -390,6 +344,7 @@ dl+dl:before {
   .family ul {
     position: absolute;
     top: 32px;
+    right:0;
     width: 150px;
     border:1px solid #ddd;
     border-radius:5px;
@@ -501,56 +456,6 @@ dl+dl:before {
     font-size:15px;
     color:#555;
 }
-
-/* ---------슬라이드---------- */
-.station{
-    /* border:1px solid red; */
-    padding-top:35px;
-    margin-top:5px;
-    width:100%;
-    overflow:hidden;
-    display:flex;
-    flex-direction: column-reverse;
-    position:relative;
-}
-
-.train{
-    width:calc(190% - 50px);
-    display:flex;
-}
-
-.train>li{
-    width:150px;
-    margin-right:10px;
-    /* border:1px solid green; */
-}
-
-.train>li>img{
-    width:100%;
-    object-fit: cover;
-}
-
-.btnPrev{
-    width:30px;
-    position:absolute;
-    top:0;
-    right:35px;
-    cursor: pointer;
-}
-
-.btnNext{
-    width:30px;
-    position:absolute;
-    top:0;
-    right:0;
-    cursor: pointer;
-}
-
-.btnPrev>img,.btnNext>img{
-    width:100%;
-    object-fit: cover;
-}
-
   }
 
 /* 모바일 *//* 모바일 *//* 모바일 *//* 모바일 *//* 모바일 *//* 모바일 *//* 모바일 *//* 모바일 *//* 모바일 */
@@ -595,14 +500,15 @@ dl+dl:before {
     color:#555;
     border:1px solid #ddd;
     border-radius:5px;
-    width:100px;
-    padding:5px 0;
+    width: 100px;
+    padding: 5px 10px;
     position: relative;
     font-size:12px;
   }
 
   .family>a {
-    display: block;
+    display: flex;
+    justify-content: space-between;
   }
 
   .family .icon {
@@ -637,7 +543,9 @@ dl+dl:before {
   .family ul {
     position: absolute;
     top: 30px;
+    right:0;
     width: 100px;
+    padding:0 10px;
     border:1px solid #ddd;
     border-radius:5px;
     background:#fff;
@@ -743,53 +651,61 @@ dl+dl:before {
     text-indent:35px;
     color:#555;
 }
+}
 
-/* ---------슬라이드---------- */
+/* @media (max-width:402px) {
+  .station{
+    height:60px;
+  }
+}
+
+@media (min-width:403px) and (max-width:767px) {
+  .station{
+    height:90px;
+  }
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+  .station{
+    height:90px;
+  }
+}
+
+@media (min-width:1024px){
+  .station{
+    height:90px;
+  }
+} */
+
+/* 슬라이드 */
 .station{
-    /* border:1px solid red; */
-    padding-top:35px;
-    margin-top:5px;
-    width:100%;
-    overflow:hidden;
-    display:flex;
-    flex-direction: column-reverse;
-    position:relative;
+  /* border:1px solid red; */
+  padding-top:35px;
+  margin-top:5px;
+  width:100%;
+  overflow:hidden;
+  position:relative;
 }
 
 .train{
-    width:calc(900% - 20px);
-    display:flex;
+  width:190%;
+  display:flex;
 }
 
 .train>li{
-    width:150px;
-    margin-right:10px;
-    /* border:1px solid green; */
+  width:11.11%;
 }
 
 .train>li>img{
-    width:100%;
-    object-fit: cover;
+  width:100%;
+  object-fit: cover;
 }
 
-.btnPrev{
-    width:30px;
-    position:absolute;
-    top:0;
-    right:70px;
-    cursor: pointer;
+.swiper .swiper-pagination {
+  position: absolute;
+  bottom: 0px !important;
 }
 
-.btnNext{
-    width:30px;
-    position:absolute;
-    top:0;
-    right:35px;
-    cursor: pointer;
-}
-
-.btnPrev>img,.btnNext>img{
-    width:100%;
-    object-fit: cover;
-}
+.swiper-pagination .swiper-pagination-bullet{
+background:#000;
 }

@@ -7,66 +7,35 @@ $(document).ready(function () {
       });
     
     // 슬라이드
-    let count=0;
-
-  if (matchMedia("screen and (min-width: 1024px)").matches) {
-    $(".btnNext").click(function(e){
-        count++
-        e.preventDefault()
-        if(count>1){count=1}
-        moveSlider(count)
-    })
-
-    $(".btnPrev").click(function(e){
-        count--
-        e.preventDefault()
-        if(count<0){count=0}
-        moveSlider(count)
-    })
-
-    function moveSlider(idx){
-        $(".train").css("transform", "translateX(" + (-50 * idx) + "%)")
-    }
-    }
-
-    if (matchMedia("screen and (min-width:768px) and (max-width:1023px)").matches) {
-        $(".btnNext").click(function(e){
-            count++
-            e.preventDefault()
-            if(count>1){count=1}
-            moveSlider(count)
-        })
-    
-        $(".btnPrev").click(function(e){
-            count--
-            e.preventDefault()
-            if(count<0){count=0}
-            moveSlider(count)
-        })
-    
-        function moveSlider(idx){
-            $(".train").css("transform", "translateX(" + (-50 * idx) + "%)")
-        }
-        }
-
-    if (matchMedia("screen and (max-width:767px)").matches) {
-            $(".btnNext").click(function(e){
-                count++
-                e.preventDefault()
-                if(count>4){count=4}
-                moveSlider(count)
-            })
-        
-            $(".btnPrev").click(function(e){
-                count--
-                e.preventDefault()
-                if(count<0){count=0}
-                moveSlider(count)
-            })
-        
-            function moveSlider(idx){
-                $(".train").css("transform", "translateX(" + (-10 * idx) + "%)")
-            }
-            }
+    var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        spaceBetween: 10,
+        slidesPerView : 2.5,
+        breakpoints: {
+            402: {
+                slidesPerView: 3.5,  //브라우저가 768보다 클 때
+              },
+            768: {
+              slidesPerView: 4.5,  //브라우저가 768보다 클 때
+            },
+            1024: {
+              slidesPerView: 5.5,  //브라우저가 1024보다 클 때
+            },
+          },
+        centeredSlides: false,
+        autoplay:{
+            delay:2500,
+            disableOnInteraction: false,
+        },
+        loop : false,
+        loopAdditionalSlides : 1,
+      });
+      $(".swiper").hover(function(){
+        swiper.autoplay.stop();
+      }, function(){
+        swiper.autoplay.start();
+      });
 
   })
