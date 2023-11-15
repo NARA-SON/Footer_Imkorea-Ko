@@ -134,7 +134,8 @@
     border:1px solid #ddd;
     border-radius:5px;
     background:#fff;
-    opacity: 0;
+    opacity:0;
+    pointer-events: none;
   }
 
   .family ul li{
@@ -159,6 +160,7 @@
 
   .family ul.on {
     opacity: 1;
+    pointer-events:all;
   }
   
   /* --------second-line--------- */
@@ -350,6 +352,7 @@ dl+dl:before {
     border-radius:5px;
     background:#fff;
     opacity: 0;
+    pointer-events: none;
   }
 
   .family ul li{
@@ -374,6 +377,7 @@ dl+dl:before {
 
   .family ul.on {
     opacity: 1;
+    pointer-events: all;
   }
   
   /* --------second-line--------- */
@@ -550,6 +554,7 @@ dl+dl:before {
     border-radius:5px;
     background:#fff;
     opacity: 0;
+    pointer-events: none;
   }
 
   .family ul li{
@@ -569,6 +574,7 @@ dl+dl:before {
 
   .family ul.on {
     opacity: 1;
+    pointer-events: all;
   }
   
   /* --------second-line--------- */
