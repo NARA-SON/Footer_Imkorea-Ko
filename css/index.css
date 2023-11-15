@@ -136,6 +136,7 @@
     background:#fff;
     opacity:0;
     pointer-events: none;
+    z-index:10;
   }
 
   .family ul li{
@@ -181,30 +182,11 @@
     object-fit: cover;
   }
 
-  .snsList{
-    display:flex;
-    justify-content: space-between;
-    width:150px;
-  }
-
-  .snsList>li{
-    width:30px;
-  }
-
-  .snsList>li>a{
-    width:100%;
-    display:block;
-  }
-
-  .snsList>li>a>img{
-    width:100%;
-    object-fit: cover;
-  }
-
   /* --------third-line--------- */
   .third-line{
     display:flex;
     justify-content: space-between;
+    position:relative;
   }
 
   .info-cont {
@@ -212,6 +194,7 @@
     font-size:13px;
     font-weight:bold;
     color:#555;
+    padding-bottom:10px;
 }
 
 .info-cont>li {
@@ -243,6 +226,9 @@ dl+dl:before {
     border:1px solid #eee;
     border-radius:10px;
     padding:20px;
+    position:absolute;
+    right:0;
+    top:-25px;
 }
 
 .centerPhone>*{
@@ -353,6 +339,7 @@ dl+dl:before {
     background:#fff;
     opacity: 0;
     pointer-events: none;
+    z-index:10;
   }
 
   .family ul li{
@@ -398,30 +385,11 @@ dl+dl:before {
     object-fit: cover;
   }
 
-  .snsList{
-    display:flex;
-    justify-content: space-between;
-    width:150px;
-  }
-
-  .snsList>li{
-    width:30px;
-  }
-
-  .snsList>li>a{
-    width:100%;
-    display:block;
-  }
-
-  .snsList>li>a>img{
-    width:100%;
-    object-fit: cover;
-  }
-
   /* --------third-line--------- */
   .third-line{
     display:flex;
     justify-content: space-between;
+    position:relative;
   }
 
   .info-cont {
@@ -445,6 +413,9 @@ dl+dl:before {
     border:1px solid #eee;
     border-radius:10px;
     padding:20px;
+    position:absolute;
+    right:0;
+    top:-25px;
 }
 
 .centerPhone>*{
@@ -555,6 +526,7 @@ dl+dl:before {
     background:#fff;
     opacity: 0;
     pointer-events: none;
+    z-index:10;
   }
 
   .family ul li{
@@ -591,26 +563,6 @@ dl+dl:before {
   }
 
   .second-line>figure>img{
-    width:100%;
-    object-fit: cover;
-  }
-
-  .snsList{
-    display:flex;
-    justify-content: space-between;
-    width:100px;
-  }
-
-  .snsList>li{
-    width:25px;
-  }
-
-  .snsList>li>a{
-    width:100%;
-    display:block;
-  }
-
-  .snsList>li>a>img{
     width:100%;
     object-fit: cover;
   }
