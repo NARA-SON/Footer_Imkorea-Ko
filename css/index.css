@@ -182,6 +182,26 @@
     object-fit: cover;
   }
 
+  .snsList{
+    display:flex;
+    justify-content: space-between;
+    width:150px;
+  }
+
+  .snsList>li{
+    width:30px;
+  }
+
+  .snsList>li>a{
+    width:100%;
+    display:block;
+  }
+
+  .snsList>li>a>img{
+    width:100%;
+    object-fit: cover;
+  }
+
   /* --------third-line--------- */
   .third-line{
     display:flex;
@@ -228,7 +248,7 @@ dl+dl:before {
     padding:20px;
     position:absolute;
     right:0;
-    top:-25px;
+    top:0;
 }
 
 .centerPhone>*{
@@ -385,6 +405,26 @@ dl+dl:before {
     object-fit: cover;
   }
 
+  .snsList{
+    display:flex;
+    justify-content: space-between;
+    width:150px;
+  }
+
+  .snsList>li{
+    width:30px;
+  }
+
+  .snsList>li>a{
+    width:100%;
+    display:block;
+  }
+
+  .snsList>li>a>img{
+    width:100%;
+    object-fit: cover;
+  }
+
   /* --------third-line--------- */
   .third-line{
     display:flex;
@@ -415,7 +455,7 @@ dl+dl:before {
     padding:20px;
     position:absolute;
     right:0;
-    top:-25px;
+    top:0;
 }
 
 .centerPhone>*{
@@ -563,6 +603,26 @@ dl+dl:before {
   }
 
   .second-line>figure>img{
+    width:100%;
+    object-fit: cover;
+  }
+
+  .snsList{
+    display:flex;
+    justify-content: space-between;
+    width:120px;
+  }
+
+  .snsList>li{
+    width:25px;
+  }
+
+  .snsList>li>a{
+    width:100%;
+    display:block;
+  }
+
+  .snsList>li>a>img{
     width:100%;
     object-fit: cover;
   }
