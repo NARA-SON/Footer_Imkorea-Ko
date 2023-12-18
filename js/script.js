@@ -15,7 +15,7 @@ $(document).ready(function () {
         slidesPerView : 2.5,
         breakpoints: {
             402: {
-                slidesPerView: 3.5,  //브라우저가 768보다 클 때
+                slidesPerView: 2.5,  //브라우저가 768보다 클 때
               },
             768: {
               slidesPerView: 4.5,  //브라우저가 768보다 클 때
